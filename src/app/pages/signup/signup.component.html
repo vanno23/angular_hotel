@@ -1,0 +1,50 @@
+<div class="banner">
+  <app-header></app-header>
+  <div class="banner-background"></div>
+  <div class="banner_text">
+    <h3>WELCOME TO</h3>
+    <h1>LUXUTRY</h1>
+    <h2>HOTELS</h2>
+    <p>Book your stay and enjoy Luxury</p>
+    <p>redefined at the most affordable rates.</p>
+  </div>
+</div>
+<div class="sign-up-container">
+  <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" type="email" />
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" formControlName="password" type="password" />
+    </div>
+
+    <div>
+      <label for="avatar">Avatar:</label>
+      <input id="avatar" formControlName="avatar" type="text" />
+    </div>
+
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" type="text" />
+    </div>
+
+    <div>
+      <label for="phoneNumber">Phone Number:</label>
+      <input id="phoneNumber" formControlName="phoneNumber" type="text" />
+    </div>
+
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" formControlName="gender">
+        <option value="0">Male</option>
+        <option value="1">Female</option>
+      </select>
+    </div>
+
+    <a routerLink="/signin">sign in</a>
+    <button type="submit">Sign Up</button>
+  </form>
+</div>

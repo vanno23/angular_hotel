@@ -1,0 +1,38 @@
+<div class="banner">
+  <app-header></app-header>
+  <div class="banner-background"></div>
+  <div class="banner_text">
+    <h3>WELCOME TO</h3>
+    <h1>LUXUTRY</h1>
+    <h2>HOTELS</h2>
+    <p>Book your stay and enjoy Luxury</p>
+    <p>redefined at the most affordable rates.</p>
+  </div>
+</div>
+<div class="sign-up-container">
+  <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" type="email" />
+      <div *ngIf="signInForm.get('email') && signInForm.get('email')">
+        <small *ngIf="signInForm.get('email')">Email is required.</small>
+        <small *ngIf="signInForm.get('email')"
+          >Please enter a valid email.</small
+        >
+      </div>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" formControlName="password" type="password" />
+      <div *ngIf="signInForm.get('password') && signInForm.get('password')">
+        <small *ngIf="signInForm.get('password')">Password is required.</small>
+        <small *ngIf="signInForm.get('password')"
+          >Password must be at least 6 characters long.</small
+        >
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="signInForm.invalid">Sign In</button>
+  </form>
+</div>

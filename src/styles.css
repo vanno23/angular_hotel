@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+*:not(i) {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+}

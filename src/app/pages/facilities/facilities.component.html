@@ -1,0 +1,41 @@
+<div class="banner">
+  <app-header></app-header>
+  <div class="banner-background"></div>
+  <div class="banner_text">
+    <h3>WELCOME TO</h3>
+    <h1>LUXUTRY</h1>
+    <h2>HOTELS</h2>
+    <p>Book your stay and enjoy Luxury</p>
+    <p>redefined at the most affordable rates.</p>
+  </div>
+</div>
+
+<div class="facilities">
+  <div class="facilities_header">
+    <h2>FACILITIES</h2>
+    <p>
+      We want your stay at our lush hotel to be truly unforgettable. That is why
+      we give special attention to all of your needs so that we can ensure an
+      experience quite uniquw. Luxury hotels offers the perfect setting with
+      stunning views for leisure and our modern luxury resort facilities will
+      help you enjoy the best of all.
+    </p>
+  </div>
+  <div class="facilities_container">
+    <div *ngFor="let item of facilities" class="facilities_item">
+      <div class="facilities_background"></div>
+      <img
+        src="../../../assets/images/facilities/facilities1.jpg"
+        alt="facilities image"
+      />
+      <div class="facilities_text">
+        <p>{{ item.facilityName }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+  </div>
+</div>

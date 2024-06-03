@@ -1,0 +1,48 @@
+<div class="banner">
+  <app-header></app-header>
+  <div class="banner-background"></div>
+  <div class="banner_text">
+    <h3>WELCOME TO</h3>
+    <h1>LUXUTRY</h1>
+    <h2>HOTELS</h2>
+    <p>Book your stay and enjoy Luxury</p>
+    <p>redefined at the most affordable rates.</p>
+  </div>
+</div>
+
+<div class="rooms">
+  <div class="rooms_header">
+    <h2>ROOMS AND RATES</h2>
+    <p>
+      Each of our bright, light-flooded rooms come with everything you could
+      possibly need for a comfortable stay. And yes, comfort isn’t our only
+      objective, we also value good design, sleek contemporary furnishing
+      complemented by the rich tones of nature’s palette as visible from our
+      rooms’ sea-view windows and terraces.
+    </p>
+  </div>
+
+  <div class="rooms_container">
+    <div *ngFor="let item of roomsItems" class="rooms_item">
+      <img
+        src="../../../assets/images/rooms/room1.jpg"
+        alt="facilities image"
+      />
+      <h2>{{ item.name | uppercase }}</h2>
+      <div class="rooms_item_footer">
+        <div class="view_details">
+          <a [routerLink]="['/room', item.roomTypeId]">
+            <i class="fa-solid fa-plus"></i>
+            <p>VIEW ROOM DETAILS</p>
+          </a>
+        </div>
+        <p class="room_price">{{ item.defaultPrice | currency }} Avg/night</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Calm, Serene, Retro – What a way to relax and enjoy"</p>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+.banner {
+  background-image: url("../../../assets/images/banner1.png");
+  position: relative;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-background {
+  width: 100%;
+  height: 100%;
+  background-color: #14274a;
+  opacity: 0.5;
+}
+
+.banner_text {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  padding-inline: 10%;
+  color: white;
+}
+
+.banner_text h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.banner_text h1 {
+  font-size: 8rem;
+  letter-spacing: 2px;
+}
+
+.banner_text h2 {
+  font-size: 2.5rem;
+  letter-spacing: 15px;
+}
+
+.banner_text p {
+  margin-top: 2px;
+}
+
+.home {
+  padding-inline: 10%;
+}
+
+.home .home_title {
+  color: #14274a;
+  font-size: 2rem;
+  text-align: center;
+  margin: 83px 0 93px;
+}
+
+.home_item {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  column-gap: 100px;
+  margin-bottom: 70px;
+}
+
+.home_item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home_item_left .home_item_left_content {
+  border-left: 1px solid #14274a;
+  padding-left: 50px;
+}
+
+.home_item_left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.home_item_left p {
+  color: #14274a;
+  font-size: 1.1rem;
+  line-height: 28px;
+}
+
+.home_item_left .explore {
+  margin-top: 30px;
+  display: flex;
+}
+
+.home_item_left .explore a {
+  border-radius: 5px;
+  color: white;
+  padding: 18px 70px;
+  background-color: #e0b973;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.home_item_left .explore a:hover {
+  background-color: #c79942;
+}
+
+.home_item_right {
+  position: relative;
+}
+
+.home_item_right img {
+  width: 100%;
+  height: 100%;
+}
+
+.home_item_right div {
+  position: absolute;
+  top: 0;
+  background-color: #14274a;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.home .testimonials {
+  text-align: center;
+}
+
+.home .testimonials h2 {
+  font-size: 2.5rem;
+}
+
+.home .testimonials p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}

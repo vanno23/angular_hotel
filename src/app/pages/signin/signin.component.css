@@ -1,0 +1,85 @@
+.banner {
+  background-image: url("../../../assets/images/banner1.png");
+  position: relative;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-background {
+  width: 100%;
+  height: 100%;
+  background-color: #14274a;
+  opacity: 0.5;
+}
+
+.banner_text {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  padding-inline: 10%;
+  color: white;
+}
+
+.banner_text h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.banner_text h1 {
+  font-size: 8rem;
+  letter-spacing: 2px;
+}
+
+.banner_text h2 {
+  font-size: 2.5rem;
+  letter-spacing: 15px;
+}
+
+.banner_text p {
+  margin-top: 2px;
+}
+
+.sign-up-container {
+  max-width: 400px;
+  margin: 100px auto 0px;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+label {
+  margin-top: 1em;
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.7em;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[disabled] {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+small {
+  color: red;
+}
